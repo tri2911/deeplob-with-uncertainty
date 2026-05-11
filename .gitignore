@@ -1,0 +1,32 @@
+# --- Raw data (re-fetched from the FI-2010 source) ---
+data.zip
+Train_Dst_*.txt
+Test_Dst_*.txt
+
+# --- On-disk caches and intermediate artifacts ---
+.cache/
+__pycache__/
+*.pyc
+
+# --- Run logs ---
+*.log
+
+# --- Intermediate per-epoch checkpoints (keep only best_val_model_*.pt) ---
+checkpoints/epoch_*.pt
+checkpoints/latest_model_pytorch.pt
+
+# --- Stale local files we are NOT shipping ---
+best_val_model_pytorch.pt
+run_train_pytorch copy.ipynb
+
+# --- Editor / IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Internal planning docs (not for public repo) ---
+docs/
